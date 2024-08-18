@@ -1,0 +1,16 @@
+<div>
+<%-include("partials/header.ejs") %>
+
+<%if(locals.fnames && locals.lnames){%>
+        <h2><%=fnames %> <%=lnames %></h2>
+<% }else{%>
+    
+    <h1>welcome to the full name generator</h1>
+<%} %>
+
+<form action="/submit" method="post">
+    <button>submit</button>
+</form>
+<%-include("partials/footer.ejs") %>
+
+</div>
